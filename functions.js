@@ -21,12 +21,10 @@ const writeResults = (n) => {
 }
 writeResults(n)
 
-
-
+const rand = Math.round(Math.random() * (20 - 1) + 1)
 console.log(rand)
 
 const getRandomInteger = () => {
-  const rand = Math.round(Math.random() * (20 - 1) + 1)
   if (n === undefined) {
     for (let i = 0; i < rand; i++) {
       someArr.push(randomProfile.name())
@@ -35,4 +33,6 @@ const getRandomInteger = () => {
     fs.writeFileSync(fileName, `${someArr.join('\n')}`);
   }
 }
-// getRandomInteger()
+getRandomInteger()
+
+module.exports = {}
